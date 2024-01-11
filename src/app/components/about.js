@@ -20,7 +20,11 @@ const About = () => {
     },
   };
 
+  // This useRef is attached to the element we want to watch if it entered the viewport
   const animationRef = useRef(null);
+
+  // Watch when the about is in view. The 'amount' property is used to ensure at least half of the element is on the view port before the animation fires
+  // The 'once' property is used to tell the animation to happen just one time, instead of refiring anytime the element enters the viewport
   const isInView = useInView(animationRef, { amount: 0.5, once: true });
 
   return (
