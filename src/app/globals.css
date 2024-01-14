@@ -85,13 +85,13 @@ body {
   background-image: linear-gradient(45deg, #a1d06d, #af4261);
 }
 
-#imageBg, #popUpEmailAndPhoneNumber, .addShadowBg, .skill {
+#imageBg, #popUpEmailAndPhoneNumber, .addShadowBg, .projectCarousel {
   box-shadow: var(--box-shadow);
 }
 
-
+/*Makes the text appear like its lying down*/
 .lying-text {
-  transform: rotateX(-60deg); /* Counter-rotate to compensate for the container's rotation */
+  transform: rotateX(-60deg); 
 }
 
 
@@ -113,3 +113,19 @@ button.control-arrow.control-prev::before {
   border-right: 20px solid #fff !important;
   margin-right: 20px !important;
 }
+
+
+/* Make the carousel's status bigger. (i.e. the status that says "1 of 3") */
+#projects .carousel-status{
+  font-size: 15px !important;
+  font-weight: bolder !important;
+  top: -10px !important;
+}
+
+
+/* Make the carousel slide a bit to show the next item */
+.slide-in {
+  transform: translate3d(-49.5%, 0px, 0px) !important;
+}
+
+/*OVERRIDING THE DEFAULT CSS OF THE CAROUSEL STOPS HERE */

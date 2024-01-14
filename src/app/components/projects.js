@@ -10,7 +10,7 @@ import Link from "next/link";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 const Projects = () => {
   const projectRef = useRef(null);
@@ -27,6 +27,40 @@ const Projects = () => {
       },
     },
   };
+
+  // Function to handle intersection changes. This will execute once the project carousel is in view
+  const handleIntersection = useCallback((entries, observer) => {
+    entries.forEach((entry) => {
+      // If the 'project' carousel is in view
+      if (entry.isIntersecting) {
+        observer.unobserve(entry.target); // Stop observing once animation is triggered
+
+        entry.target.classList.add("slide-in"); // Add the CSS class to trigger the animation
+
+        // Remove the CSS class after 1 second
+        setTimeout(() => {
+          entry.target.classList.remove("slide-in");
+        }, 1000);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    // Set up Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.8,
+    });
+
+    // Target element to observe.
+    // So, the <ul> that wraps my three carousel in the project section has the class '.slider.animated'. These are default classes added by 'react-responsive-carousel' library
+    // I added the id '#projects', which is an id of the parent element, to make sure its the project's carousel that's animated
+    const targetElement = document.querySelector("#projects .slider.animated");
+
+    // Start observing the target element
+    if (targetElement) {
+      observer.observe(targetElement);
+    }
+  }, [handleIntersection]);
 
   return (
     <section
@@ -55,6 +89,8 @@ const Projects = () => {
             stopOnHover={true}
             centerMode={true}
             centerSlidePercentage={93}
+            // centerSlidePercentage={88}
+            className="projectCarousel"
           >
             <figure className="addShadowBg p-2">
               <Image
