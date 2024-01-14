@@ -35,12 +35,15 @@ const Projects = () => {
       if (entry.isIntersecting) {
         observer.unobserve(entry.target); // Stop observing once animation is triggered
 
-        entry.target.classList.add("slide-in"); // Add the CSS class to trigger the animation
-
-        // Remove the CSS class after 1 second
+        // Wait 3 seconds before executing this, so that the animation in the parent will finish first
         setTimeout(() => {
-          entry.target.classList.remove("slide-in");
-        }, 1000);
+          entry.target.classList.add("slide-right"); // Add the CSS class to trigger the animation
+
+          // Remove the CSS class after 1 second
+          setTimeout(() => {
+            entry.target.classList.remove("slide-right");
+          }, 1000);
+        }, 3000);
       }
     });
   }, []);
@@ -65,7 +68,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="px-4 py-16 mt-24 min-[650px]:flex justify-center items-center scroll-mt-[100px]"
+      className="px-4 py-16 min-[650px]:flex justify-center items-center scroll-mt-[10px]"
     >
       <div className="flex-[0_1_650px] overflow-hidden" ref={projectRef}>
         <h1 className="text-[var(--special-text-color)] uppercase font-bold text-3xl text-center mb-4">

@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
+  scroll-behavior: smooth !important;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --box-shadow: 0px 5px 15px rgba(0,0,0,0.35);
@@ -124,7 +126,8 @@ button.control-arrow.control-prev::before {
 
 
 /* Make the carousel slide a bit to show the next item */
-.slide-in {
+/* This is a custom class I created. It does not come with 'react-responsive-carousel' library*/
+.slide-right {
   transform: translate3d(-49.5%, 0px, 0px) !important;
 }
 

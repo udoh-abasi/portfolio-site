@@ -30,7 +30,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="p-4 mt-16 flex justify-center items-center scroll-mt-[100px]"
+      className="p-4 py-16 flex justify-center items-center scroll-mt-[10px]"
     >
       <div className="text-justify max-w-[650px]">
         <h1 className="text-[var(--special-text-color)] uppercase font-bold text-3xl text-center mb-4">
