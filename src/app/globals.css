@@ -118,7 +118,7 @@ button.control-arrow.control-prev::before {
 
 
 /* Make the carousel's status bigger. (i.e. the status that says "1 of 3") */
-#projects .carousel-status{
+#projects .carousel-status, #certifications .carousel-status{
   font-size: 15px !important;
   font-weight: bolder !important;
   top: -10px !important;
@@ -129,6 +129,10 @@ button.control-arrow.control-prev::before {
 /* This is a custom class I created. It does not come with 'react-responsive-carousel' library*/
 .slide-right {
   transform: translate3d(-49.5%, 0px, 0px) !important;
+}
+
+#certifications .slide:hover, #certifications .slide:focus {
+  scale: 1.1;
 }
 
 /*OVERRIDING THE DEFAULT CSS OF THE CAROUSEL STOPS HERE */

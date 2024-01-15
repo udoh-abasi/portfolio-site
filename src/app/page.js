@@ -1,4 +1,5 @@
 import About from "./components/about";
+import Certifications from "./components/certifications";
 import Header from "./components/header";
 import LandingUI from "./components/landingUI";
 import Projects from "./components/projects";
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
+      <Certifications />
     </main>
   );
 }
