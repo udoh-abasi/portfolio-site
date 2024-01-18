@@ -131,7 +131,8 @@ button.control-arrow.control-prev::before {
   transform: translate3d(-49.5%, 0px, 0px) !important;
 }
 
-#certifications .slide:hover, #certifications .slide:focus {
+#certifications .slide:hover, #certifications .slide:focus,
+#awards .slide:hover img, #awards .slide:focus img {
   scale: 1.1;
 }
 

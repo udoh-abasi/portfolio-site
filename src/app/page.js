@@ -1,5 +1,7 @@
 import About from "./components/about";
+import Awards from "./components/awards";
 import Certifications from "./components/certifications";
+import Contact from "./components/contact";
 import Header from "./components/header";
 import LandingUI from "./components/landingUI";
 import Projects from "./components/projects";
@@ -14,6 +16,8 @@ export default function Home() {
       <Projects />
       <Skills />
       <Certifications />
+      <Awards />
+      <Contact />
     </main>
   );
 }
