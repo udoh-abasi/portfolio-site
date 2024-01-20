@@ -42,8 +42,8 @@ const Awards = () => {
             showStatus={true}
             interval={5000}
             stopOnHover={true}
-            centerMode={true}
-            centerSlidePercentage={93}
+            // centerMode={true}
+            // centerSlidePercentage={93}
             // centerSlidePercentage={88}
             className="projectCarousel"
           >

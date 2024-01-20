@@ -118,7 +118,7 @@ button.control-arrow.control-prev::before {
 
 
 /* Make the carousel's status bigger. (i.e. the status that says "1 of 3") */
-#projects .carousel-status, #certifications .carousel-status{
+#projects .carousel-status, #certifications .carousel-status, #awards .carousel-status {
   font-size: 15px !important;
   font-weight: bolder !important;
   top: -10px !important;

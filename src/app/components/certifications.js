@@ -44,8 +44,8 @@ const Certifications = () => {
             showStatus={true}
             interval={5000}
             stopOnHover={true}
-            centerMode={true}
-            centerSlidePercentage={93}
+            // centerMode={false}
+            // centerSlidePercentage={93}
             // centerSlidePercentage={88}
             className="projectCarousel"
           >
