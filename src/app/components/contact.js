@@ -103,13 +103,16 @@ const Contact = () => {
                 aria-label="Email"
                 title="Email"
                 className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
+                onClick={() => {
+                  document.querySelector(".popUpEmailContact").focus();
+                }}
               >
                 <MdMarkEmailUnread className="min-[450px]:text-3xl" />
               </button>
 
               <div
                 id="popUpEmailAndPhoneNumber"
-                className="absolute -top-9 -left-2 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex"
+                className="popUpEmailContact absolute -top-9 -left-2 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex"
               >
                 <Link
                   href="mailto:udoh.aba@gmail.com"
@@ -152,13 +155,16 @@ const Contact = () => {
                 aria-label="Call"
                 title="Call"
                 className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
+                onClick={() => {
+                  document.querySelector(".popUpPhoneContact").focus();
+                }}
               >
                 <FaSquarePhone className="min-[450px]:text-3xl" />
               </button>
 
               <div
                 id="popUpEmailAndPhoneNumber"
-                className="absolute -top-9 -left-10 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex"
+                className="popUpPhoneContact absolute -top-9 -left-10 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex"
               >
                 <Link
                   href="tel:+2348142622350"
