@@ -167,7 +167,7 @@ const LandingUI = () => {
                 type="button"
                 aria-label="Email"
                 title="Email"
-                className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
+                className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
                 onClick={(e) => {
                   e.target.focus();
                 }}
@@ -219,7 +219,7 @@ const LandingUI = () => {
                 type="button"
                 aria-label="Call"
                 title="Call"
-                className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
+                className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
                 onClick={(e) => {
                   e.target.focus();
                 }}
@@ -270,7 +270,7 @@ const LandingUI = () => {
               rel="nofollow"
               aria-label="LinkedIn Profile"
               title="LinkedIn"
-              className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8"
+              className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8"
             >
               <FaLinkedin />
             </Link>
@@ -281,7 +281,7 @@ const LandingUI = () => {
               rel="nofollow"
               aria-label="Github Profile"
               title="Github"
-              className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8"
+              className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8"
             >
               <FaGithub />
             </Link>
@@ -293,7 +293,7 @@ const LandingUI = () => {
               rel="nofollow"
               aria-label="Twitter X Profile"
               title="X"
-              className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8"
+              className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8"
             >
               <FaXTwitter />
             </Link>
