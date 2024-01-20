@@ -162,14 +162,14 @@ const LandingUI = () => {
           </p>
 
           <article className="flex gap-6 mt-8">
-            <div className="relative group">
+            <div className="relative">
               <button
                 type="button"
                 aria-label="Email"
                 title="Email"
                 className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
-                onClick={() => {
-                  document.querySelector(".popUpEmailUI").focus();
+                onClick={(e) => {
+                  e.target.focus();
                 }}
               >
                 <MdMarkEmailUnread />
