@@ -292,7 +292,7 @@ const Projects = () => {
               <figcaption>
                 <div className="min-[500px]:flex justify-between">
                   <Link
-                    href="https://udohsabasi.com"
+                    href="https://www.udohabasi.com"
                     target="_blank"
                     rel="nofollow"
                     className="flex-[0_1_200px] mb-4 min-[500px]:mb-0 relative flex items-center justify-center px-10 py-5 overflow-hidden font-medium text-[var(--special-text-color)]  transition duration-300 ease-out border-2 border-[var(--special-text-color)]  rounded-full shadow-md group"
