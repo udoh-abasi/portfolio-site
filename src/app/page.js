@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import About from "./components/about";
 import Awards from "./components/awards";
 import Certifications from "./components/certifications";
@@ -18,6 +19,7 @@ export default function Home() {
       <Certifications />
       <Awards />
       <Contact />
+      <Footer />
     </main>
   );
 }

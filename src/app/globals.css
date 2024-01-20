@@ -18,6 +18,12 @@ main.mainWrapper {
   background-position: left;
 }
 
+footer#pageFooter {
+  background: url(../../public/light-mode-svg.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -31,6 +37,12 @@ main.mainWrapper {
   main.mainWrapper {
     background: url(../../public/bg-black-small.webp);
     background-position: left;
+  }
+
+  footer#pageFooter {
+    background: url(../../public/dark-mode-svg.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -49,6 +61,12 @@ body.light main.mainWrapper {
   background-position: left;
 }
 
+body.light footer#pageFooter {
+  background: url(../../public/light-mode-svg.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 body.dark {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -63,7 +81,11 @@ body.dark main.mainWrapper {
   background-position: left;
 }
 
-
+body.dark footer#pageFooter {
+  background: url(../../public/dark-mode-svg.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
