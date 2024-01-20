@@ -15,8 +15,7 @@ const sendEmail = async (formData) => {
         service: "gmail",
         auth: {
           user: "tropyganty0@gmail.com",
-          // pass: process.env.TROPYGANTY0_APP_PASSWORD,
-          pass: "pnyzatfiaozyhvfa",
+          pass: process.env.TROPYGANTY0_APP_PASSWORD,
         },
       });
 

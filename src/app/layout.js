@@ -10,6 +10,7 @@ const inter = Inter({
 export const metadata = {
   title: "Udoh Abasi",
   description: "Udoh Abasi Porfolio Site",
+  author: "Udoh Abasi",
 };
 
 // NOTE: The metadata 'color-scheme', "theme-color", etc, are NOT supported to be exported as a 'metadata' object. So, we can only export them as a 'viewport' object.
