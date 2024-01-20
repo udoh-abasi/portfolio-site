@@ -176,6 +176,11 @@ const LandingUI = () => {
                 }}
                 onTouchStart={(e) => {
                   e.target.focus();
+                  document.querySelector(".popUpEmailUI").focus();
+                }}
+                onMouseEnter={(e) => {
+                  e.target.focus();
+                  document.querySelector(".popUpEmailUI").focus();
                 }}
               >
                 <MdMarkEmailUnread />
@@ -234,6 +239,11 @@ const LandingUI = () => {
                 }}
                 onTouchStart={(e) => {
                   e.target.focus();
+                  document.querySelector(".popUpEmailUI").focus();
+                }}
+                onMouseEnter={(e) => {
+                  e.target.focus();
+                  document.querySelector(".popUpEmailUI").focus();
                 }}
               >
                 <FaSquarePhone />
