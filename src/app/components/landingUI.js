@@ -170,7 +170,6 @@ const LandingUI = () => {
                 className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
                 onClick={(e) => {
                   e.target.focus();
-                  console.log(e.target);
                 }}
               >
                 <MdMarkEmailUnread />
@@ -178,7 +177,7 @@ const LandingUI = () => {
 
               <div
                 id="popUpEmailAndPhoneNumber"
-                className="popUpEmailUI absolute -top-9 -left-2 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex"
+                className="popUpEmailUI absolute -top-9 -left-2 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex peer-focus-within:flex"
               >
                 <Link
                   href="mailto:udoh.aba@gmail.com"
@@ -221,8 +220,8 @@ const LandingUI = () => {
                 aria-label="Call"
                 title="Call"
                 className="text-xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
-                onClick={() => {
-                  document.querySelector(".popUpPhoneUI").focus();
+                onClick={(e) => {
+                  e.target.focus();
                 }}
               >
                 <FaSquarePhone />
@@ -230,7 +229,7 @@ const LandingUI = () => {
 
               <div
                 id="popUpEmailAndPhoneNumber"
-                className="popUpPhoneUI absolute -top-9 -left-10 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex"
+                className="popUpPhoneUI absolute -top-9 -left-10 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex peer-focus-within:flex"
               >
                 <Link
                   href="tel:+2348142622350"
