@@ -163,10 +163,10 @@ const LandingUI = () => {
 
           <article className="flex gap-6 mt-8">
             <div className="relative group">
-              <Link
-                // type="button"
-                href=""
-                scroll={false}
+              <button
+                type="button"
+                // href=""
+                // scroll={false}
                 aria-label="Email"
                 title="Email"
                 className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
@@ -174,9 +174,12 @@ const LandingUI = () => {
                   e.target.focus();
                   document.querySelector(".popUpEmailUI").focus();
                 }}
+                onTouchStart={(e) => {
+                  e.target.focus();
+                }}
               >
                 <MdMarkEmailUnread />
-              </Link>
+              </button>
 
               <div
                 id="popUpEmailAndPhoneNumber"
@@ -218,10 +221,10 @@ const LandingUI = () => {
             </div>
 
             <div className="relative group">
-              <Link
-                // type="button"
-                href=""
-                scroll={false}
+              <button
+                type="button"
+                // href=""
+                // scroll={false}
                 aria-label="Call"
                 title="Call"
                 className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
@@ -229,9 +232,12 @@ const LandingUI = () => {
                   e.target.focus();
                   document.querySelector(".popUpPhoneUI").focus();
                 }}
+                onTouchStart={(e) => {
+                  e.target.focus();
+                }}
               >
                 <FaSquarePhone />
-              </Link>
+              </button>
 
               <div
                 id="popUpEmailAndPhoneNumber"
