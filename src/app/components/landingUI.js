@@ -163,17 +163,20 @@ const LandingUI = () => {
 
           <article className="flex gap-6 mt-8">
             <div className="relative group">
-              <button
-                type="button"
+              <Link
+                // type="button"
+                href=""
+                scroll={false}
                 aria-label="Email"
                 title="Email"
                 className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
                 onClick={(e) => {
                   e.target.focus();
+                  document.querySelector(".popUpEmailUI").focus();
                 }}
               >
                 <MdMarkEmailUnread />
-              </button>
+              </Link>
 
               <div
                 id="popUpEmailAndPhoneNumber"
@@ -215,17 +218,20 @@ const LandingUI = () => {
             </div>
 
             <div className="relative group">
-              <button
-                type="button"
+              <Link
+                // type="button"
+                href=""
+                scroll={false}
                 aria-label="Call"
                 title="Call"
                 className="text-3xl min-[350px]:text-4xl block ring-2 rounded-full ring-[var(--special-text-color)] p-1 text-[var(--special-text-color)] hover:ring-8 peer"
                 onClick={(e) => {
                   e.target.focus();
+                  document.querySelector(".popUpPhoneUI").focus();
                 }}
               >
                 <FaSquarePhone />
-              </button>
+              </Link>
 
               <div
                 id="popUpEmailAndPhoneNumber"
