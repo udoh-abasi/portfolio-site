@@ -188,7 +188,7 @@ const LandingUI = () => {
 
               <div
                 id="popUpEmailAndPhoneNumber"
-                className="popUpEmailUI absolute -top-9 -left-2 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex peer-focus-within:flex"
+                className="popUpEmailUI absolute -top-9 -left-2 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex peer-focus-within:flex group-hover:flex peer-hover:flex"
               >
                 <Link
                   href="mailto:udoh.aba@gmail.com"
@@ -251,7 +251,7 @@ const LandingUI = () => {
 
               <div
                 id="popUpEmailAndPhoneNumber"
-                className="popUpPhoneUI absolute -top-9 -left-10 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex peer-focus-within:flex"
+                className="popUpPhoneUI absolute -top-9 -left-10 bg-white gap-4 p-1 rounded-2xl hidden hover:flex focus:flex group-focus-within:flex focus-within:flex group-focus:flex peer-focus:flex peer-focus-within:flex group-hover:flex peer-hover:flex"
               >
                 <Link
                   href="tel:+2348142622350"
