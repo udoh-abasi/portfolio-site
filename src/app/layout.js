@@ -37,7 +37,7 @@ const jsonLd = {
     "@type": "PostalAddress",
     addressLocality: "Abuja",
     addressRegion: "NG",
-    streetAddress: "Nigeria",
+    addressCountry: "Nigeria",
   },
 
   email: "mailto:udoh.abasi.s@gmail.com",
@@ -69,7 +69,13 @@ const jsonLd = {
     "@type": "Occupation",
     name: "Fullstack web developer",
     educationRequirements:
-      "BSc in Zoology, Skilled in Django, React, NextJS, NodeJS",
+      "BSc in Zoology and Skilled in Django, React, NextJS, NodeJS",
+    description:
+      "Fullstack web developer with proficiency in Django, React, NextJS, NodeJS, based in Abuja Nigeria.",
+    occupationLocation: {
+      "@type": "AdministrativeArea",
+      address: "Abuja, Nigeria",
+    },
   },
 };
 
