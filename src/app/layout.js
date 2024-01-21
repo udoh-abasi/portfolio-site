@@ -29,6 +29,50 @@ export const viewport = {
   colorScheme: "light dark",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Abuja",
+    addressRegion: "NG",
+    streetAddress: "Nigeria",
+  },
+
+  email: "mailto:udoh.abasi.s@gmail.com",
+  image: "https://www.udohabasi.com/profilePicture-no-bg-small.webp",
+  jobTitle: "Fullstack web developer in Abuja, Nigeria",
+  name: "Udoh Abasi",
+  telephone: "(234) 814-262-2350",
+  url: "https://www.udohabasi.com",
+  award: "Employee of the Year Award in 2022 and 2023",
+  gender: "male",
+  sameAs: "https://www.udohabasi.com",
+  description:
+    "Udoh Abasi is a fullstack web developer with over 3 years experience with proficiency in Django, React, NextJS, NodeJS, based in Abuja Nigeria.",
+
+  workPerformed: [
+    {
+      "@type": "CreativeWork",
+      name: "Udohs Platform. A site where you can make a blog post and read other articles by other users",
+      sameAs: "https://udohsplatform.udohabasi.com",
+    },
+    {
+      "@type": "CreativeWork",
+      name: "Udohs clothing. An e-commerce site where you can purchase nice clothes. You can add as many items as you wish to the cart and checkout as guest.",
+      sameAs: "https://udohsclothing.vercel.app/",
+    },
+  ],
+
+  hasOccupation: {
+    "@type": "Occupation",
+    name: "Fullstack web developer",
+    educationRequirements:
+      "BSc in Zoology, Skilled in Django, React, NextJS, NodeJS",
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -47,6 +91,10 @@ export default function RootLayout({ children }) {
             // When the toast appears, it stays for 5 seconds before disappearing
             duration: 5000,
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </body>
     </html>
