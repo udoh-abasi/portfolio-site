@@ -205,7 +205,7 @@ const Header = () => {
           </li>
 
           {smallScreenNav && (
-            <li>
+            <li className="block min-[777px]:hidden">
               <button
                 aria-label="Open menu"
                 type="button"

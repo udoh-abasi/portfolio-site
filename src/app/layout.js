@@ -9,8 +9,18 @@ const inter = Inter({
 
 export const metadata = {
   title: "Udoh Abasi",
-  description: "Udoh Abasi Porfolio Site",
+  description:
+    "Udoh Abasi Porfolio Site. A fullstack developer, experienced with Django and React.",
   author: "Udoh Abasi",
+  openGraph: {
+    title: "Udoh Abasi",
+    description: "Udoh Abasi Porfolio Site",
+    type: "website",
+    url: "https://www.udohabasi.com",
+    image: "https://www.udohabasi.com/profilePicture-no-bg-small.webp",
+    imageAlt: "Udoh Abasi",
+    alt: "Udoh Abasi",
+  },
 };
 
 // NOTE: The metadata 'color-scheme', "theme-color", etc, are NOT supported to be exported as a 'metadata' object. So, we can only export them as a 'viewport' object.

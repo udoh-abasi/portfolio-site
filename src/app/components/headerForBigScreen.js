@@ -42,7 +42,7 @@ const HeaderForBigScreen = () => {
       id="smallScreenMenu"
       className={`${
         scrollDir === "up" ? "bottom-2" : "-bottom-48"
-      } fixed left-0 flex justify-around items-center w-full text-[black] font-bold rounded-full overflow-hidden transition-all duration-700`}
+      } fixed left-0 flex justify-around items-center w-full text-[black] font-bold rounded-full overflow-hidden transition-all duration-700 max-[776px]:hidden`}
     >
       <li className="hover:bg-[#e4cfde] rounded-3xl transition-all duration-700">
         <Link
