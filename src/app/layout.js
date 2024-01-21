@@ -73,7 +73,8 @@ const jsonLd = {
     description:
       "Fullstack web developer with proficiency in Django, React, NextJS, NodeJS, based in Abuja Nigeria.",
     occupationLocation: {
-      "@type": "AdministrativeArea",
+      "@type": "Country",
+      name: "Nigeria",
       address: "Abuja, Nigeria",
     },
   },
