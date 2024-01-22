@@ -40,7 +40,7 @@ const jsonLd = {
     addressCountry: "Nigeria",
   },
 
-  email: "mailto:udoh.abasi.s@gmail.com",
+  email: "mailto:udohabasi.dev@gmail.com",
   image: "https://www.udohabasi.com/profilePicture-no-bg-small.webp",
   jobTitle: "Fullstack web developer in Abuja, Nigeria",
   name: "Udoh Abasi",

@@ -195,7 +195,7 @@ const LandingUI = () => {
                   target="_blank"
                   className="underline text-blue-400"
                 >
-                  udohdev@gmail.com
+                  udohabasi.dev@gmail.com
                 </Link>
 
                 <div className="bg-gray-700 rounded-xl inline text-[#70dbb8] font-bold">
@@ -207,7 +207,7 @@ const LandingUI = () => {
                       onClick={async () => {
                         // When the button is clicked, copy the text to the clipboard
                         await navigator.clipboard.writeText(
-                          "udohdev@gmail.com"
+                          "udohabasi.dev@gmail.com"
                         );
                         setCopied(true);
                       }}

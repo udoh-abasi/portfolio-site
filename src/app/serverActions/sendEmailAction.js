@@ -21,8 +21,8 @@ const sendEmail = async (formData) => {
 
       const mailOptions = {
         email,
-        to: "udoh.abasi.s@gmail.com",
-        subject: "Contact",
+        to: "udohabasi.dev@gmail.com",
+        subject: "Contact from Portfolio Site",
         text: `
         Name: ${name}
         From: ${email}
