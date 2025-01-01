@@ -44,11 +44,11 @@ const About = () => {
           ref={animationRef}
         >
           <motion.p variants={aboutAnimation}>
-            I am a results-driven Fullstack Engineer with 4+ years of experience
-            and expertise in planning, designing, and implementing high-quality
-            web apps. I have demonstrated expertise in reducing page load times
-            by 50%, implementing RESTful APIs, and driving user engagement
-            through optimized web solutions.
+            I am a results-driven Fullstack Software Engineer with 4+ years of
+            experience and expertise in planning, designing, and implementing
+            high-quality web apps. I have demonstrated expertise in reducing
+            page load times by 50%, implementing RESTful APIs, and driving user
+            engagement through optimized web solutions.
           </motion.p>
 
           <motion.p variants={aboutAnimation} className="mt-4">

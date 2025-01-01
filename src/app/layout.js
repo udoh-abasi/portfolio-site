@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata = {
   title: "Udoh Abasi",
   description:
-    "Udoh Abasi Porfolio Site. A fullstack developer, experienced with Django and React.",
+    "Udoh Abasi Porfolio Site. A fullstack Software Engineer, experienced with Django, NodeJS, NextJS React and TailwindCSS.",
   author: "Udoh Abasi",
   openGraph: {
     title: "Udoh Abasi",
@@ -42,15 +42,15 @@ const jsonLd = {
 
   email: "mailto:udohabasi.dev@gmail.com",
   image: "https://www.udohabasi.com/profilePicture-no-bg-small.webp",
-  jobTitle: "Fullstack web developer in Abuja, Nigeria",
+  jobTitle: "Fullstack Software Engineer in Abuja, Nigeria",
   name: "Udoh Abasi",
   telephone: "(234) 814-262-2350",
   url: "https://www.udohabasi.com",
-  award: "Employee of the Year Award in 2022 and 2023",
+  award: "Employee of the Year Award in 2021, 2022 and 2024",
   gender: "male",
   sameAs: "https://www.udohabasi.com",
   description:
-    "Udoh Abasi is a fullstack web developer with over 3 years experience with proficiency in Django, React, NextJS, NodeJS, based in Abuja Nigeria.",
+    "Udoh Abasi is a fullstack Software Engineer with over 3 years experience with proficiency in Django, React, NextJS, NodeJS, based in Abuja Nigeria.",
 
   workPerformed: [
     {
@@ -67,11 +67,11 @@ const jsonLd = {
 
   hasOccupation: {
     "@type": "Occupation",
-    name: "Fullstack web developer",
+    name: "Fullstack Software Engineer",
     educationRequirements:
       "BSc in Zoology and Skilled in Django, React, NextJS, NodeJS",
     description:
-      "Fullstack web developer with proficiency in Django, React, NextJS, NodeJS, based in Abuja Nigeria.",
+      "Fullstack Software Engineer with proficiency in Django, React, NextJS, NodeJS, Typescript based in Abuja Nigeria.",
     occupationLocation: {
       "@type": "Country",
       name: "Nigeria",
