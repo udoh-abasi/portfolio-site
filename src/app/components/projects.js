@@ -161,13 +161,13 @@ const Projects = () => {
                 </div>
 
                 <p className="mt-2 text-justify p-3">
-                  This is a Fullstack web app I called{" "}
                   <em className="text-[var(--special-text-color)] font-bold">
-                    Udohs.
+                    Udohs
                   </em>{" "}
-                  It is an e-commerce site that enables users buy and sell
-                  products with ease. You can sign up and sell any item you wish
-                  to sell on the platform.
+                  is a fully functional e-commerce platform that allows users to
+                  buy and sell products seamlessly. It features an in-app chat
+                  functionality I built using Socket.io, enabling real-time
+                  communication between users.
                 </p>
 
                 <div className="pt-4 flex text-left flex-col mb-4 min-[520px]:flex-row min-[520px]:mb-0 min-[520px]:gap-8 min-[520px]:items-center">
@@ -186,10 +186,25 @@ const Projects = () => {
                       MongoDB
                     </span>{" "}
                     <span className="block bg-[rgb(var(--foreground-rgb))] text-[rgb(var(--nav-bg-color))] py-1 px-2 rounded-2xl border-2 border-[rgb(var(--nav-bg-color))]">
+                      Socket.io
+                    </span>
+                    <span className="block bg-[rgb(var(--foreground-rgb))] text-[rgb(var(--nav-bg-color))] py-1 px-2 rounded-2xl border-2 border-[rgb(var(--nav-bg-color))]">
                       TailwindCSS
                     </span>
                   </p>
                 </div>
+
+                <p className="mt-2 text-justify p-3">
+                  <strong className="text-[var(--special-text-color)] font-bold text-lg">
+                    Challenges and how they were Addressed:
+                  </strong>{" "}
+                  The real-time chat functionality posed challenges such as
+                  handling edge cases like disconnections, reconnections, and
+                  ensuring message consistency. To address these issues, I
+                  optimized Socket.io&apos;s event handling and implemented a
+                  system to store chats in the database, allowing messages to be
+                  retrieved seamlessly when a user reconnects.
+                </p>
               </figcaption>
             </figure>
 
@@ -284,6 +299,16 @@ const Projects = () => {
                     </span>
                   </p>
                 </div>
+
+                <p className="mt-2 text-justify p-3">
+                  <strong className="text-[var(--special-text-color)] font-bold text-lg">
+                    Challenges and how they were Addressed:
+                  </strong>{" "}
+                  With a high volume of article listings, optimizing PostgreSQL
+                  queries was crucial to ensure fast response time. To address
+                  this, I implemented server-side pagination for article
+                  listings in PostgreSQL.
+                </p>
               </figcaption>
             </figure>
 
@@ -377,6 +402,16 @@ const Projects = () => {
                     </span>
                   </p>
                 </div>
+
+                <p className="mt-2 text-justify p-3">
+                  <strong className="text-[var(--special-text-color)] font-bold text-lg">
+                    Challenges and how they were Addressed:
+                  </strong>{" "}
+                  Managing complex states for cart functionality and user
+                  sessions across guest and signed-up users. To address this, I
+                  implemented Redux to centralize state management and ensure
+                  consistency across the app.
+                </p>
               </figcaption>
             </figure>
 
@@ -466,6 +501,17 @@ const Projects = () => {
                   </p>
                 </div>
               </figcaption>
+
+              <p className="mt-2 text-justify p-3">
+                <strong className="text-[var(--special-text-color)] font-bold text-lg">
+                  Challenges and how they were Addressed:
+                </strong>{" "}
+                Incorporating smooth animations with Framer Motion without
+                affecting the site&apos;s performance. To address this, I
+                carefully managed animation timelines to minimize excessive
+                re-renders and triggering animations only once, when they are
+                within the viewport (lazy animation loading).
+              </p>
             </figure>
           </Carousel>
         </motion.div>
