@@ -156,7 +156,7 @@ const LandingUI = () => {
             </span>
           </p>
 
-          <p className="font-bold text-[min(6.5vw,_30px)]">
+          <p className="font-bold text-[min(6vw,_25px)]">
             <span className="text-[var(--special-text-color)]">Fullstack</span>{" "}
             Software Engineer
           </p>
