@@ -4,6 +4,7 @@ import Image from "next/image";
 import project1 from "../../../public/Project 1.webp";
 import project2 from "../../../public/Project 2.webp";
 import project3 from "../../../public/Project 3.webp";
+import project4 from "../../../public/Project 1a.webp";
 import { FaGithub } from "react-icons/fa";
 import { IoDesktopOutline } from "react-icons/io5";
 import Link from "next/link";
@@ -95,6 +96,103 @@ const Projects = () => {
             // centerSlidePercentage={88}
             className="projectCarousel"
           >
+            <figure className="addShadowBg p-2">
+              <Image
+                src={project4}
+                alt="Udohs website"
+                className="w-full mb-4"
+              />
+
+              <figcaption>
+                <div className="min-[500px]:flex justify-between">
+                  <Link
+                    href="https://udohs.udohabasi.com"
+                    target="_blank"
+                    rel="nofollow"
+                    className="flex-[0_1_200px] mb-4 min-[500px]:mb-0 relative flex items-center justify-center px-10 py-5 overflow-hidden font-medium text-[var(--special-text-color)]  transition duration-300 ease-out border-2 border-[var(--special-text-color)]  rounded-full shadow-md group"
+                  >
+                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[rgb(var(--nav-bg-color))] duration-300 -translate-x-full bg-[var(--special-text-color)]  group-hover:translate-x-0 ease">
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="absolute font-bold flex items-center justify-center w-full h-full text-[var(--special-text-color)] transition-all duration-300 transform group-hover:translate-x-full ease">
+                      View Live <IoDesktopOutline className="ml-2 text-2xl" />
+                    </span>
+                  </Link>
+
+                  <Link
+                    href="https://github.com/udoh-abasi/udohs"
+                    target="_blank"
+                    rel="nofollow"
+                    className="flex-[0_1_200px] relative flex items-center justify-center px-10 py-5 overflow-hidden font-medium text-[var(--special-text-color)]  transition duration-300 ease-out border-2 border-[var(--special-text-color)]  rounded-full shadow-md group"
+                  >
+                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-[rgb(var(--nav-bg-color))] duration-300 -translate-x-full bg-[var(--special-text-color)]  group-hover:translate-x-0 ease">
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="absolute font-bold flex items-center justify-center w-full h-full text-[var(--special-text-color)] transition-all duration-300 transform group-hover:translate-x-full ease">
+                      Github <FaGithub className="ml-2 text-2xl" />
+                    </span>
+                  </Link>
+                </div>
+
+                <p className="mt-2 text-justify p-3">
+                  This is a Fullstack web app I called{" "}
+                  <em className="text-[var(--special-text-color)] font-bold">
+                    Udohs.
+                  </em>{" "}
+                  It is an e-commerce site that enables users buy and sell
+                  products with ease. You can sign up and sell any item you wish
+                  to sell on the platform.
+                </p>
+
+                <div className="pt-4 flex text-left flex-col mb-4 min-[520px]:flex-row min-[520px]:mb-0 min-[520px]:gap-8 min-[520px]:items-center">
+                  <h2 className="font-bold">Built with:</h2>
+                  <p className="flex flex-wrap">
+                    <span className="block bg-[rgb(var(--foreground-rgb))] text-[rgb(var(--nav-bg-color))] py-1 px-2 rounded-2xl border-2 border-[rgb(var(--nav-bg-color))]">
+                      Typescript
+                    </span>{" "}
+                    <span className="block bg-[rgb(var(--foreground-rgb))] text-[rgb(var(--nav-bg-color))] py-1 px-2 rounded-2xl border-2 border-[rgb(var(--nav-bg-color))]">
+                      NodeJS
+                    </span>{" "}
+                    <span className="block bg-[rgb(var(--foreground-rgb))] text-[rgb(var(--nav-bg-color))] py-1 px-2 rounded-2xl border-2 border-[rgb(var(--nav-bg-color))]">
+                      React
+                    </span>{" "}
+                    <span className="block bg-[rgb(var(--foreground-rgb))] text-[rgb(var(--nav-bg-color))] py-1 px-2 rounded-2xl border-2 border-[rgb(var(--nav-bg-color))]">
+                      MongoDB
+                    </span>{" "}
+                    <span className="block bg-[rgb(var(--foreground-rgb))] text-[rgb(var(--nav-bg-color))] py-1 px-2 rounded-2xl border-2 border-[rgb(var(--nav-bg-color))]">
+                      TailwindCSS
+                    </span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+
             <figure className="addShadowBg p-2">
               <Image
                 src={project1}

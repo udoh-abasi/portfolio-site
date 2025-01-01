@@ -158,7 +158,7 @@ const LandingUI = () => {
 
           <p className="font-bold text-[min(6.5vw,_30px)]">
             <span className="text-[var(--special-text-color)]">Fullstack</span>{" "}
-            Web Developer
+            Engineer
           </p>
 
           <article className="flex gap-6 mt-8">

@@ -44,9 +44,17 @@ const About = () => {
           ref={animationRef}
         >
           <motion.p variants={aboutAnimation}>
-            I am a Fullstack Web Developer with over 3 years of experience,
-            skilled in solving problems with Django, ReactJS, NextJS, NodeJS,
-            etc.
+            I am a results-driven Fullstack Engineer with 4+ years of experience
+            and expertise in planning, designing, and implementing high-quality
+            web apps. I have demonstrated expertise in reducing page load times
+            by 50%, implementing RESTful APIs, and driving user engagement
+            through optimized web solutions.
+          </motion.p>
+
+          <motion.p variants={aboutAnimation} className="mt-4">
+            I have proven ability to quickly understand requirements and create
+            innovative solutions using modern frameworks like React, Django,
+            NextJS, NodeJS, TailwindCSS, Radix UI, etc.
           </motion.p>
 
           <motion.p variants={aboutAnimation} className="my-4">
@@ -63,16 +71,10 @@ const About = () => {
               {" "}
               Employee of the Year{" "}
             </strong>
-            award in Tenece Professional Services Limited, twice (in 2021 and
-            2022) because I approach problems as opportunities for learning and
-            growth. I also display high-level proactiveness in providing
+            award in Tenece Professional Services Limited, thrice (in 2024, 2022
+            and 2021) because I approach problems as opportunities for learning
+            and growth. I also display high-level proactiveness in providing
             solution to challenges and adding value to my team.
-          </motion.p>
-
-          <motion.p variants={aboutAnimation} className="mt-4">
-            I am seeking a challenging and dynamic role in a highly innovative
-            environment that will allow me to utilize my skills in creating
-            robust and scalable web applications.
           </motion.p>
         </motion.div>
       </div>

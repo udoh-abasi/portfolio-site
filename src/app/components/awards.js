@@ -9,6 +9,8 @@ import award2 from "../../../public/Award 2022 Employee of the year-small.webp";
 import award3 from "../../../public/Award 2022 Unsung Hero-small.webp";
 import award4 from "../../../public/Award 2021-small.webp";
 import award5 from "../../../public/Award 2020-small.webp";
+import award6 from "../../../public/Award 2024 - Employee of the year.webp";
+import award7 from "../../../public/Award 2024 - Unsung Hero.webp";
 
 const Awards = () => {
   return (
@@ -49,15 +51,55 @@ const Awards = () => {
           >
             <figure className="p-2">
               <Image
+                src={award6}
+                alt="Award for Employee of the year 2024"
+                className="w-full mb-4"
+              />
+              <figcaption className="text-justify">
+                <span className="text-[var(--special-text-color)] font-bold uppercase">
+                  Employee of the Year (2024):
+                </span>{" "}
+                This award recognizes an employee who consistently takes great
+                care and effort to achieve excellent quality in his/her work.
+                Displays a high level of proactivity, innovativeness, and
+                creativity in providing solutions to challenges and adding value
+                to his/her work. Staff who promotes inclusiveness and
+                demonstrates leadership qualities, departmental knowledge, and
+                experience. Staff who approaches problems as opportunities for
+                learning and growth.
+              </figcaption>
+            </figure>
+
+            <figure className="p-2">
+              <Image
+                src={award7}
+                alt="Award for Unsung hero of the year 2024"
+                className="w-full mb-4"
+              />
+
+              <figcaption className="text-justify">
+                <span className="text-[var(--special-text-color)] font-bold uppercase">
+                  Unsung Hero of the Year (2024):
+                </span>{" "}
+                This award recognizes an employee who looks for creative new
+                approaches to difficult issues. Consistently go above and beyond
+                without fanfare. Fill in when and wherever needed and always
+                perform at a high level. Help others by sharing knowledge of the
+                organization&apos;s practices and job-related skills.
+              </figcaption>
+            </figure>
+
+            <figure className="p-2">
+              <Image
                 src={award1}
                 alt="Award for engagement champion of the year"
                 className="w-full mb-4"
               />
               <figcaption className="text-justify">
-                <span className="text-[var(--special-text-color)] font-bold">
+                <span className="text-[var(--special-text-color)] font-bold uppercase">
                   Engagement champion Award (2023):
                 </span>{" "}
-                This award is given to a staff who is highly engaged at the job.
+                This award recognizes a staff who is highly engaged at the job.
                 Tackles challenges as opportunities and stands as an excellent
                 example to colleagues.
               </figcaption>
@@ -70,10 +112,10 @@ const Awards = () => {
                 className="w-full mb-4"
               />
               <figcaption className="text-justify">
-                <span className="text-[var(--special-text-color)] font-bold">
+                <span className="text-[var(--special-text-color)] font-bold uppercase">
                   Employee of the Year (2022):
                 </span>{" "}
-                This award is given to a staff who displays high level of
+                This award recognizes a staff who displays high level of
                 proactivity, innovativeness and initiativeness in providing
                 solutions to challenges and adding value.
               </figcaption>
@@ -87,10 +129,10 @@ const Awards = () => {
               />
 
               <figcaption className="text-justify">
-                <span className="text-[var(--special-text-color)] font-bold">
-                  Unsung Hero of the Year Award (2022):
+                <span className="text-[var(--special-text-color)] font-bold uppercase">
+                  Unsung Hero of the Year (2022):
                 </span>{" "}
-                This award is given to a staff who quietly and consistently goes
+                This award recognizes a staff who quietly and consistently goes
                 above and beyond to work and support others without fanfare.
               </figcaption>
             </figure>
@@ -102,10 +144,10 @@ const Awards = () => {
                 className="w-full mb-4"
               />
               <figcaption className="text-justify">
-                <span className="text-[var(--special-text-color)] font-bold">
+                <span className="text-[var(--special-text-color)] font-bold uppercase">
                   Employee of the Year (2021):
                 </span>{" "}
-                This award is given to a staff who displays high level of
+                This award recognizes a staff who displays high level of
                 proactivity, innovativeness and initiativeness in providing
                 solutions to challenges and adding value.
               </figcaption>
@@ -118,11 +160,11 @@ const Awards = () => {
                 className="w-full mb-4"
               />
               <figcaption className="text-justify">
-                <span className="text-[var(--special-text-color)] font-bold">
+                <span className="text-[var(--special-text-color)] font-bold uppercase">
                   Outstanding new comer of the Year (2020):
                 </span>{" "}
-                This award is given to a new staff who demonstrates high level
-                of excellence in overall job performance.
+                This award recognizes a new staff who demonstrates high level of
+                excellence in overall job performance.
               </figcaption>
             </figure>
           </Carousel>

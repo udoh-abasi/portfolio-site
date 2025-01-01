@@ -321,8 +321,8 @@ const Header = () => {
                 >
                   <Link
                     target="_blank"
-                    href="/Udoh Abasi  CV - Fullstack Dev.pdf"
-                    download="Udoh Abasi CV"
+                    href="/Udoh Abasiono CV.pdf"
+                    download="Udoh Abasiono CV"
                     className="w-full relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500"
                   >
                     <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
